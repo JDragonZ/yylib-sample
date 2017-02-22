@@ -13,6 +13,7 @@ var LazyPageRoutes = lazy(require('bundle?lazy!./PageRoutes'));//页面路由-�
 //示例一
 var SampleTable = lazy(require('bundle?lazy&name=example1!../modules/sample/SampleTable'));
 var SampleForm = lazy(require('bundle?lazy&name=example1!../modules/sample/SampleForm'));
+var LoginForm=lazy(require('bundle?lazy&name=example1!../components/LoginForm'))
 module.exports = (
     <Route path="/" component={App}>
         <IndexRoute component={MenuPage}/>
@@ -22,5 +23,8 @@ module.exports = (
             <IndexRoute component={SampleTable}/>
             <Route path="form" component={SampleForm}/>
         </Route>
+        <Route path="loginForm" component={LazyPageRoutes}>
+            <IndexRoute component={LoginForm}/>
+            </Route>
     </Route>
 );

@@ -16,6 +16,7 @@ var MenuPage = React.createClass({
                     <YYMenuSub key="sub_module1" title={<span><YYIcon type="book" /><span>本应用工程</span></span>}>
                         <YYMenuItem key="1"><Link to="/sample"><span><YYIcon type="hdd"/>基础示例一</span></Link></YYMenuItem>
                         <YYMenuItem key="2"><Link to="/sample"><span><YYIcon type="hdd"/>基础示例二</span></Link></YYMenuItem>
+                        <YYMenuItem key="3"><Link to="/loginForm"><span><YYIcon type="hdd"/>基础示例三</span></Link></YYMenuItem>
                     </YYMenuSub>
                 </YYMenu>
             </YYPage>
