@@ -1,5 +1,6 @@
 var React = require('react');
-var { YYClass,YYPage,YYForm,YYInput,YYCheckbox,YYButton,YYFormItem,YYPanel } = require('yylib-ui');
+var { YYClass,YYPage,YYForm,YYInput,YYCheckbox,YYButton,YYFormItem,YYPanel,YYDivide } = require('yylib-ui');
+var FormDemo8=require('../components/FormDemo8')
 
 var LoginForm = YYClass.create({
     handleSubmit: function (e) {
@@ -22,6 +23,8 @@ var LoginForm = YYClass.create({
                     </YYFormItem>
                     <YYButton type="primary">登陆</YYButton>
                 </YYForm>
+                <YYDivide></YYDivide>
+                <FormDemo8/>
             </YYPage>
         )
     }
